@@ -9,7 +9,7 @@
 	</session-config>
 
 	<data-source>
-		<name>java:global/chsss-ds</name>
+		<name>java:global/chess-ds</name>
 		<class-name>com.skeleton.db.EncryptedDataSource</class-name>
 	</data-source>
 </web-app>
