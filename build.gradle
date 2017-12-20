@@ -4,7 +4,7 @@ buildscript {
 	}
 	dependencies {
 		// A changer en fonction du SGBD
-		compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+		classpath "mysql:mysql-connector-java:6.0.6"
 		classpath "org.jboss.logging:jboss-logging:3.3.0.Final"
 		classpath "fish.payara.blue.extras:payara-micro:4.1.2.174"
 	}
