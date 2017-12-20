@@ -4,7 +4,7 @@ buildscript {
 	}
 	dependencies {
 		// A changer en fonction du SGBD
-		classpath "org.postgresql:postgresql:9.4.1208"
+		compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
 		classpath "org.jboss.logging:jboss-logging:3.3.0.Final"
 		classpath "fish.payara.blue.extras:payara-micro:4.1.2.174"
 	}
@@ -35,7 +35,9 @@ dependencies {
 	compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1'
 	compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.0.Final'
 	// A changer en fonction du SGBD
-	compile group: 'org.postgresql', name: 'postgresql', version: '9.4.1208'
+
+	compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+
 	compile group: 'org.slf4j', name: 'slf4j-api', version: "${slf4jVersion}"
 	runtime group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.1.0.Final'
 	runtime group: 'org.jboss.logging', name: 'jboss-logging',version: '3.3.0.Final'
